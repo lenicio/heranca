@@ -2,9 +2,9 @@ package br.com.zorp.pessoas;
 import br.com.zorp.validacoes.Validacao;
 
 public class Pessoa {
-    private String nome;
-    private String cpf;
-    private int idade;
+    protected String nome;
+    protected String cpf;
+    protected int idade;
 
     public void apresentar() {
         System.out.printf("""

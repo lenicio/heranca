@@ -3,6 +3,19 @@ package br.com.zorp.pessoas;
 public class Professor extends Pessoa{
     private String departamento;
 
+
+    @Override
+    public void apresentar() {
+        System.out.printf("""
+                %n*******************************************
+                Nome: %s
+                CPF: %s
+                Idade: %d
+                Departamento: %s
+                ********************************************%n
+                """, nome, cpf, idade, departamento);
+    }
+
     public String getDepartamento() {
         return departamento;
     }
